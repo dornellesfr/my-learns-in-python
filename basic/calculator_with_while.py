@@ -13,6 +13,7 @@ while True:
 
     except ValueError:
         print('Fields must be a valid content')
+        continue
 
     sum_operator = operator == '+'
     decrease = operator == '-'

@@ -2,7 +2,6 @@ name = input('Type your name: ')
 age = input('Type your age: ')
 
 if name and age:
-    age = int(age)
     print(f'Your name is {name}')
     print(f'Your name reversed is {name[::-1]}')
     if ' ' in name:

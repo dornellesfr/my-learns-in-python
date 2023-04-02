@@ -27,7 +27,6 @@ def guess_secret():
                 if letter == letter_to_guess:
                     list_bet[position] = letter
             bet = ''.join(list_bet)
-            print(bet)
         else:
             print("Guess not right!")
 

@@ -1,5 +1,4 @@
-def validate_cpf():
-    CPF = '04793962030'
+def validate_cpf(CPF):
     list_cpf = []
 
     # Getting first digit
@@ -33,4 +32,5 @@ def validate_cpf():
         print('This  cpf is not valid')
 
 
-validate_cpf()
+if __name__ == '__main__':
+    validate_cpf('90631653902')

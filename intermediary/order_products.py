@@ -26,6 +26,3 @@ def order_by_price(arr):
     array = deepcopy(arr)
     array.sort(key=lambda product: product["preco"])
     return array
-
-
-print(order_by_price(products))

@@ -1,5 +1,6 @@
 import json
-from creation_instances import PATH_FILE, Person
+from intermediary.save_class.creation_instances_and_save \
+    import PATH_FILE, Person
 
 with open(PATH_FILE, 'r') as file:
     instances = json.load(file)

@@ -16,23 +16,23 @@ class Notification(ABC):
 
 class EmailNotification(Notification):
     def send(self) -> bool:
-        print(f'Sended e-mail: {self.msg}')
+        print(f'Sent e-mail: {self.msg}')
         return True
 
 
 class SMSNotification(Notification):
     def send(self) -> bool:
-        print(f'Sended SMS: {self.msg}')
+        print(f'Sent SMS: {self.msg}')
         return True
 
 
 def notify(note: Notification):
-    sended_notification = note.send()
+    sent_notification = note.send()
 
-    if sended_notification:
-        print('Notification sended')
+    if sent_notification:
+        print('Notification sent')
     else:
-        print('Notification NOT sended')
+        print('Notification NOT sent')
 
 
 if __name__ == '__main__':

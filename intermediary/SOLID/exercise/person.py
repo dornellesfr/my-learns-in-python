@@ -1,6 +1,4 @@
-from abc import ABC, abstractclassmethod
-
-class Person(ABC):
+class Person:
     def __init__(self, name: str, age: int) -> None:
         self._name = name
         self._age = age
@@ -13,12 +11,7 @@ class Person(ABC):
     def age(self):
         return self._age
 
-
-class Client(Person):
-    def __init__(self, name: str, age: int, account: Account) -> None:
-        super().__init__(name, age)
-        self._account = account
-
-    @property
-    def account(self):
-        return self._account
+    def __repr__(self) -> str:
+        class_name = self.__class__.__name__
+        attrs = f'({self.name!r}, {self.age!r})'
+        return f'{class_name}{attrs}'

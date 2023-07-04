@@ -51,17 +51,17 @@ class Bank:
 
 
 if __name__ == '__main__':
-    c1 = cl.Client('Fernando', 22)
+    client1 = cl.Client('Fernando', 22)
     cc1 = acc.CheckingAccount(1589, 1000, 500, 200)
-    c1.account = cc1
+    client1.account = cc1
 
     c2 = cl.Client('Maria', 66)
     cp1 = acc.CheckingAccount(1212, 2900, 50000)
     c2.account = cp1
 
     bb = Bank('Banco do Brasil', [1212], [c2], [cp1])
-    itau = Bank('Itaú', [1589], [c1], [cc1])
+    itau = Bank('Itaú', [1589], [client1], [cc1])
 
-    print(itau.auth(c1, cc1))
+    print(itau.auth(client1, cc1))
 
     # print(itau)
